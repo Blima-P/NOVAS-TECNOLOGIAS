@@ -67,21 +67,21 @@ if __name__ == "__main__":
     print("EQUIPAMENTOS DISPONIVEIS")
     print(locadora.equipamentos_disponiveis())
     
-    print("\n=== REALIZANDO LOCACOES ===")
+    print("\n REALIZANDO LOCACOES")
     locadora.realizar_locacao("João", 1, 3)  
     locadora.realizar_locacao("Maria", 2, 2)
     locadora.realizar_locacao("João", 3, 1)
     
-    print("\n=== EQUIPAMENTOS DISPONIVEIS AGORA ===")
+    print("\nEQUIPAMENTOS DISPONIVEIS AGORA")
     print(locadora.equipamentos_disponiveis())
     
-    print("\n=== FATURAMENTO POR CLIENTE ===")
+    print("\nFATURAMENTO POR CLIENTE")
     for cliente, total in locadora.faturamento_por_cliente.items():
         print(f"{cliente}: R${total:.2f}")
     
-    print("\n=== DEVOLVENDO EQUIPAMENTO ===")
+    print("\nDEVOLVENDO EQUIPAMENTO")
     furadeira.devolver()
     print(f"Furadeira devolvida! Status: {furadeira.status}")
     
-    print("\n=== EQUIPAMENTOS DISPONIVEIS APOS DEVOLUCAO ===")
+    print("\nEQUIPAMENTOS DISPONIVEIS APOS DEVOLUCAO")
     print(locadora.equipamentos_disponiveis())
