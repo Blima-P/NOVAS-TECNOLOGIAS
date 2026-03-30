@@ -28,7 +28,7 @@ if __name__ == "__main__":
     # Chama a funcao de limpeza
     dados_limpos = limpar_dados(dados_brutos)
     
-    print("\nDADOS DEPOIS DA LIMPEZA")
+    print("\nDADOS DEPOIS DA LIMPEZA    ")
     print("(Apenas usuarios ativos, nomes em MAIUSCULO, emails em minusculo)")
     for usuario in dados_limpos:
         print(f"Nome: {usuario['nome']}, Email: {usuario['email']}")
